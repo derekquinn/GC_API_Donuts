@@ -2,7 +2,7 @@ package maryann.donut.shop;
 
 import java.util.List;
 
-public class DonutDetailsResponse extends DonutDetails {
+public class DonutDetailsResponse {
 
 	private List<DonutDetails> donutDetails;
 

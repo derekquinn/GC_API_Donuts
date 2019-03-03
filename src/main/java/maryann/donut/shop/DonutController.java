@@ -21,17 +21,20 @@ public class DonutController {
 		return new ModelAndView("index", "donut", donut);
 	}
 
-	@PostMapping("/")
-	public ModelAndView index(Long id) {
-
-		List<DonutDetails> donutD = donutApiService.showMeADonut(id);
-
-		return new ModelAndView("details", "donutD", donutD);
-	}
+//	@PostMapping("/")
+//	public ModelAndView index(Long id) {
+//
+//		List<DonutDetails> donutD = donutApiService.showMeADonut(id);
+//
+//		return new ModelAndView("details", "donutD", donutD);
+//	}
 
 	@RequestMapping("/details")
 	public ModelAndView getDetails() {
+		
+		List<DonutDetails> donutD = donutApiService.showMeADonut(3L);
+		
 
-		return new ModelAndView("details");
+		return new ModelAndView("details", "donut", donutD);
 	}
 }

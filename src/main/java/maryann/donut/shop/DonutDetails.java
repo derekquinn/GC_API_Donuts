@@ -2,21 +2,38 @@ package maryann.donut.shop;
 
 import java.util.List;
 
-public class DonutDetails extends Donut {
-
+public class DonutDetails {
+	
+	private Long id;
+	private String ref;
+	private String name;
 	private Integer calories;
 	private List<String> extras;
 	private String photo;
 
-	public DonutDetails() {
 
+	public Long getId() {
+		return id;
 	}
 
-	public DonutDetails(Integer calories, List<String> extras, String photo) {
-		super();
-		this.calories = calories;
-		this.extras = extras;
-		this.photo = photo;
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getRef() {
+		return ref;
+	}
+
+	public void setRef(String ref) {
+		this.ref = ref;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public Integer getCalories() {
@@ -43,4 +60,15 @@ public class DonutDetails extends Donut {
 		this.photo = photo;
 	}
 
+
+	public DonutDetails() {
+
+	}
+
+	public DonutDetails(Integer calories, List<String> extras, String photo) {
+		super();
+		this.calories = calories;
+		this.extras = extras;
+		this.photo = photo;
+	}
 }
