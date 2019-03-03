@@ -10,11 +10,15 @@
 <body>
 
 
-
+	${donutdetails.id}
+	
 	${donutdetails.name } ${ donutdetails.ref }
+	
 	<p>
-	<img width="300" height="300" src="${donutdetails.photo }">
-</p>
+		<img width="300" height="300" src="${donutdetails.photo }">
+	</p>
+	
+	
 
 
 </body>

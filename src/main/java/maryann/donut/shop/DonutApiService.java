@@ -23,8 +23,7 @@ public class DonutApiService {
 		String url = "https://grandcircusco.github.io/demo-apis/donuts/3.json";
 		DonutDetails detailsresponse = restTemplate.getForObject(url, DonutDetails.class);
 		
-		System.out.println(detailsresponse);
-		
+	
 		return detailsresponse;
 	}
 
