@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: dereq
+Build-Jdk: 11.0.1
+Implementation-Title: shop
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: maryann.donut
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/shop
+Created-By: Maven Integration for Eclipse
+
