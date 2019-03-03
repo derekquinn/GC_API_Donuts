@@ -14,7 +14,7 @@
 			<tr>
 				<th>Name</th>
 				<th>ID</th>
-				<th>Linky</th>
+
 			</tr>
 
 			<c:forEach var="donut" items="${ donut }">
@@ -23,7 +23,7 @@
 				<tr>
 					<td><a href="${donut.ref}">${ donut.name }</a></td>
 					<td>${ donut.id }</td>
-					<td></td>
+
 				</tr>
 			</c:forEach>
 			

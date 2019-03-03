@@ -9,14 +9,20 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class DonutController {
-	
+
 	@Autowired
 	private DonutApiService donutApiService;
-	
+
 	@RequestMapping("/")
-	public ModelAndView home() {
-		
+	public ModelAndView goHome() {
+
 		List<Donut> donut = this.donutApiService.showMeTheDonuts();
 		return new ModelAndView("index", "donut", donut);
+	}
+
+	@RequestMapping("/details")
+	public ModelAndView getDetails() {
+
+		return new ModelAndView("details");
 	}
 }
