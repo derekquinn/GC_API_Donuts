@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -31,10 +30,11 @@ public class DonutController {
 
 	@RequestMapping("/details")
 	public ModelAndView getDetails() {
-		
-		List<DonutDetails> donutD = donutApiService.showMeADonut(3L);
-		
 
-		return new ModelAndView("details", "donut", donutD);
+		DonutDetails donutdetails = donutApiService.showMeADonut();
+
+		System.out.println(donutdetails.toString());
+
+		return new ModelAndView("details", "donutdetails", donutdetails);
 	}
 }

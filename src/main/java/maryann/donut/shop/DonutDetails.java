@@ -3,7 +3,7 @@ package maryann.donut.shop;
 import java.util.List;
 
 public class DonutDetails {
-	
+
 	private Long id;
 	private String ref;
 	private String name;
@@ -11,6 +11,19 @@ public class DonutDetails {
 	private List<String> extras;
 	private String photo;
 
+	public DonutDetails() {
+
+	}
+
+	public DonutDetails(String ref, String name, Integer calories, List<String> extras, String photo, Long id) {
+		super();
+		this.ref = ref;
+		this.name = name;
+		this.calories = calories;
+		this.extras = extras;
+		this.photo = photo;
+		this.id = id;
+	}
 
 	public Long getId() {
 		return id;
@@ -60,15 +73,4 @@ public class DonutDetails {
 		this.photo = photo;
 	}
 
-
-	public DonutDetails() {
-
-	}
-
-	public DonutDetails(Integer calories, List<String> extras, String photo) {
-		super();
-		this.calories = calories;
-		this.extras = extras;
-		this.photo = photo;
-	}
 }
