@@ -21,14 +21,6 @@ public class DonutController {
 		return new ModelAndView("index", "donut", donut);
 	}
 
-//	@PostMapping("/")
-//	public ModelAndView index(Long id) {
-//
-//		List<DonutDetails> donutD = donutApiService.showMeADonut(id);
-//
-//		return new ModelAndView("details", "donutD", donutD);
-//	}
-
 	@RequestMapping("/details/{id}/")
 	public ModelAndView getDetails(@PathVariable("id")int id) {
 

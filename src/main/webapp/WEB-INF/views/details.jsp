@@ -14,7 +14,10 @@
 	
 	${donutdetails.name } ${ donutdetails.ref }
 	
-	
+	<c:forEach var = "extra" items="${donutdetails.extras}">
+	<p> ${extra}
+	</p>
+	</c:forEach>
 	
 	
 
