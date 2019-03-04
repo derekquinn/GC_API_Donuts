@@ -21,7 +21,7 @@
 
 			
 				<tr>
-					<td><a href="${donut.ref}">${ donut.name }</a></td>
+					<td><a href="/details/${donut.id}/">${ donut.name }</a></td>
 					<td>${ donut.id }</td>
 
 				</tr>

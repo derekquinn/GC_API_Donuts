@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -28,10 +29,10 @@ public class DonutController {
 //		return new ModelAndView("details", "donutD", donutD);
 //	}
 
-	@RequestMapping("/details")
-	public ModelAndView getDetails() {
+	@RequestMapping("/details/{id}/")
+	public ModelAndView getDetails(@PathVariable("id")int id) {
 
-		DonutDetails donutdetails = donutApiService.showMeADonut();
+		DonutDetails donutdetails = donutApiService.showMeADonut(id);
 
 		System.out.println(donutdetails.toString());
 
